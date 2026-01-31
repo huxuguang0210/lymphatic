@@ -61,31 +61,31 @@ st.sidebar.markdown("Select values according to clinical findings:")
 vascular_invasion = st.sidebar.selectbox(
     "Vascular Invasion",
     options=[0, 1],
-    format_func=lambda x: "0 = Negative" if x == 0 else "1 = Positive"
+    format_func=lambda x: "Negative" if x == 0 else "Positive"
 )
 
 lymph_node_side = st.sidebar.selectbox(
     "Unilateral or Bilateral Lymph Nodes (Imaging)",
     options=[0, 1],
-    format_func=lambda x: "0 = Unilateral" if x == 0 else "1 = Bilateral"
+    format_func=lambda x: "Unilateral" if x == 0 else "Bilateral"
 )
 
 scc = st.sidebar.selectbox(
     "SCC Level",
     options=[0, 1],
-    format_func=lambda x: "0 = < 3.95" if x == 0 else "1 = ≥ 3.95"
+    format_func=lambda x: "< 3.95" if x == 0 else "≥ 3.95"
 )
 
 max_lymph_node_diameter = st.sidebar.selectbox(
     "Maximum Lymph Node Diameter",
     options=[0, 1],
-    format_func=lambda x: "0 = < 1.45 cm" if x == 0 else "1 = ≥ 1.45 cm"
+    format_func=lambda x: "< 1.45 cm" if x == 0 else "≥ 1.45 cm"
 )
 
 invasion_depth = st.sidebar.selectbox(
     "Depth of Invasion",
     options=[0, 1],
-    format_func=lambda x: "0 = < 1/2" if x == 0 else "1 = ≥ 1/2"
+    format_func=lambda x: "< 1/2" if x == 0 else " ≥ 1/2"
 )
 
 # --------------------------------------------------
